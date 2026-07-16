@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio นายชินวุฒิ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Tahoma,sans-serif;
+    text-align:center;
+    overflow:hidden;
+    color:white;
+
+    background:linear-gradient(
+    45deg,
+    red,
+    orange,
+    yellow,
+    lime,
+    cyan,
+    blue,
+    violet,
+    red);
+
+    background-size:600% 600%;
+    animation:rainbow 10s infinite alternate;
+}
+
+/* พื้นหลังสีรุ้ง */
+@keyframes rainbow{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.card{
+    width:450px;
+    margin:80px auto;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 20px white;
+}
+
+img.profile{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:6px solid white;
+    object-fit:cover;
+    box-shadow:0 0 20px white;
+}
+
+h1{
+    margin-top:20px;
+    font-size:38px;
+    text-shadow:3px 3px 10px black;
+}
+
+h2{
+    margin-top:10px;
+}
+
+p{
+    margin-top:10px;
+    font-size:22px;
+}
+
+/* ม้าวิ่ง */
+.horse{
+    position:absolute;
+    bottom:30px;
+    left:-250px;
+    width:180px;
+    animation:run 8s linear infinite alternate;
+}
+
+@keyframes run{
+    from{
+        left:-220px;
+        transform:scaleX(1);
+    }
+    to{
+        left:100%;
+        transform:scaleX(1);
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="images/WIN_20260625_14_51_28_Pro.jpg" class="profile">
+
+<h1>นายชินวุฒิ ศรีมันตะ</h1>
+
+<h2>นักเรียนชั้นมัธยมศึกษาปีที่ 6/5</h2>
+
+<p>🏫 โรงเรียนพานทอง</p>
+
+<hr style="margin:20px;">
+
+<h2>ครูที่ปรึกษา</h2>
+
+<p><b>นางสาวชมพูนุท บุญรอต</b></p>
+
+<p>ครูผู้สอนวิชาคอมพิวเตอร์</p>
+
+</div>
+
+<!-- ม้าวิ่ง -->
+<img src="images/horse.gif" class="horse">
+
+</body>
+</html>
